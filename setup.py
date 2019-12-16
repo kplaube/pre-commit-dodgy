@@ -13,7 +13,7 @@ AUTHOR = 'Klaus Laube'
 VERSION = '0.0.1'
 
 REQUIRED = [
-    'dodgy'
+    'git+https://https://github.com/kplaube/dodgy.git#egg=dodgy'
 ]
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -42,12 +42,9 @@ setup(
     author_email=EMAIL,
     url=URL,
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
-    install_requires=REQUIRED,
+    dependency_links=REQUIRED,
     include_package_data=True,
     classifiers=[
-        # Trove classifiers
-        # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
