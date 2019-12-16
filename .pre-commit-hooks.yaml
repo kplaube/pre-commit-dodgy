@@ -1,0 +1,5 @@
+- id: dodgy
+  name: dodgy
+  entry: dodgy
+  language: python
+  types: [python]
