@@ -7,13 +7,13 @@ from setuptools import find_packages, setup
 
 NAME = 'pre-commit-dodgy'
 DESCRIPTION = 'A dodgy wrapper for pre-commit'
-URL = ''
+URL = 'https://github.com/kplaube/pre-commit-dodgy'
 EMAIL = 'kplaube@gmail.com'
 AUTHOR = 'Klaus Laube'
 VERSION = '0.0.1'
 
 REQUIRED = [
-    'git+https://https://github.com/kplaube/dodgy.git#egg=dodgy'
+    'dodgy',
 ]
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -42,7 +42,7 @@ setup(
     author_email=EMAIL,
     url=URL,
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
-    dependency_links=REQUIRED,
+    install_requires=REQUIRED,
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python',
