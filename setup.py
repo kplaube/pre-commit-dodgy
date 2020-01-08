@@ -10,7 +10,7 @@ DESCRIPTION = 'A dodgy wrapper for pre-commit'
 URL = 'https://github.com/kplaube/pre-commit-dodgy'
 EMAIL = 'kplaube@gmail.com'
 AUTHOR = 'Klaus Laube'
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 REQUIRED = [
     'dodgy',

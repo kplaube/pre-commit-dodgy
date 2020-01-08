@@ -13,7 +13,7 @@ Add this to your `.pre-commit-config.yaml`:
 ```yaml
   repos:
     - repo: https://github.com/kplaube/pre-commit-dodgy
-      rev: "0.0.1" . # Use `master` for the latest version
+      rev: "0.0.2" . # Use `master` for the latest version
       hooks:
         - id: dodgy
 ```
